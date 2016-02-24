@@ -1,0 +1,8 @@
+<resources>
+
+<style name="AppTheme" parent="android:Theme.Light">
+
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

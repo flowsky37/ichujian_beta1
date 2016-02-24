@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_5" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48" >
+
+        <ImageView
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_centerInParent="true"
+            android:src="@drawable/download" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_8" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_3"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#a3a3a3"
+                android:textSize="@dimen/size_14sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_3"
+            android:layout_marginBottom="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_5"
+            android:progressDrawable="@drawable/progress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_progress_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/size_3"
+                android:text="0M"
+                android:textColor="#a3a3a3" />
+
+            <TextView
+                android:id="@+id/tv_total_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_progress_size"
+                android:text="/0M"
+                android:textColor="#a3a3a3"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_velocity_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="KB/s"
+                android:textColor="#a3a3a3"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_velocity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_velocity_unit"
+                android:text="0"
+                android:textColor="#a3a3a3"
+                android:textSize="@dimen/size_14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

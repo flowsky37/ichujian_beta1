@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+     <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color> 
+      <color name="transparent">#9000</color>
+      <color name="common_transparent">#00000000</color>
+      <color name="bg">#f3f3f3</color>
+      <color name="btn_cancle_default">#e5e5e5</color>
+      <color name="btn_cancle_select">#cccccc</color>
+      <color name="btn_ok_default">#00a0e9</color>
+      <color name="btn_ok_select">#017ab1</color>
+      <color name="blue_press">#017ab1</color>
+      <color name="header_color">#00a0e9</color>
+      <color name="textview_color">#888888</color>
+      <color name="select">#d6d6d6</color>
+      <color name="back_select">#017ab1</color>
+      <color name="sm_bg">#b2b2b2</color>
+      <color name="sm_tv_color">#868686</color>
+      <color name="white">#ffffff</color>
+</resources>

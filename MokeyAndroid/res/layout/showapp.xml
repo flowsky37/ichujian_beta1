@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/showapp_tv_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/showapp_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/code_rod"
+        android:padding="@dimen/size_10" >
+
+        <TextView
+            android:id="@+id/showapp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_app"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/size_20sp" />
+
+        <GridView
+            android:id="@+id/show_app_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/showapp_title"
+            android:layout_centerHorizontal="true"
+            android:listSelector="@color/select"
+            android:layout_centerVertical="true"
+            android:numColumns="3" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

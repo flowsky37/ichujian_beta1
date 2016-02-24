@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/allapp_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/all_app_icon_iv"
+                android:layout_width="@dimen/size_200"
+                android:layout_height="@dimen/size_200"
+                android:layout_centerHorizontal="true"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/allapp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all_app_icon_iv"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="@dimen/size_15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/allapp_check_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/choosed"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

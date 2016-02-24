@@ -1,0 +1,54 @@
+[
+    {
+        "name": "腾讯新闻",
+        "pageName": "com.tencent.news"
+    },
+    {
+        "name": "网易新闻",
+        "pageName": "com.netease.newsreader.activity"
+    },
+    {
+        "name": "搜狐新闻",
+        "pageName": "com.sohu.newsclient"
+    },
+    {
+        "name": "今日头条",
+        "pageName": "com.ss.android.article.news"
+    },
+    {
+        "name": "凤凰新闻",
+        "pageName": "com.ifeng.news2"
+    },
+    {
+        "name": "新浪新闻",
+        "pageName": "com.sina.news"
+    },
+    {
+        "name": "百度新闻",
+        "pageName": "com.baidu.news"
+    },
+    {
+        "name": "Flipboard",
+        "pageName": "flipboard.cn"
+    },
+    {
+        "name": "ZAKER",
+        "pageName": "com.myzaker.ZAKER_Phone"
+    },
+    {
+        "name": "网易云阅读",
+        "pageName": "com.netease.pris"
+    },
+    {
+        "name": "一点资讯",
+        "pageName": "com.hipu.yidian"
+    },
+    {
+    	"name": "鲜果",
+        "pageName": "com.xianguo.pad"
+    },
+    {
+    	"name": "央视新闻",
+        "pageName": "cn.cntvnews"
+    }
+]

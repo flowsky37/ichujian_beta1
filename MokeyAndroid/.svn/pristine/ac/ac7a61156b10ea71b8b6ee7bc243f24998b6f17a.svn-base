@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_color"
+    android:paddingBottom="@dimen/size_5"
+    android:paddingTop="@dimen/size_5" >
+
+    <TextView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_10"
+        android:drawableLeft="@drawable/logo_head"
+        android:drawablePadding="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:text="@string/scan_activation_code"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,413 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/header_color" >
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_about"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/main_about"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_20"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_20sp" />
+
+        <ImageView
+            android:id="@+id/main_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/about_select"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/main_title_rl"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 一键操作 -->
+
+            <TextView
+                android:id="@+id/main_set_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@color/bg"
+                android:drawableLeft="@drawable/control"
+                android:drawablePadding="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10"
+                android:text="一键操控"
+                android:textSize="@dimen/size_14sp" />
+
+            <RelativeLayout
+                android:id="@+id/main_start_click_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_set_title"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_start_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:background="@drawable/main_item"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/click_setting"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_check_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_start_click"
+                    android:layout_alignRight="@+id/main_start_click"
+                    android:layout_alignTop="@+id/main_start_click"
+                    android:layout_marginRight="@dimen/size_25" />
+
+                <TextView
+                    android:id="@+id/main_start_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:layout_below="@+id/main_start_click"
+                    android:layout_centerVertical="true"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_start_longclick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_start_line"
+                    android:background="@drawable/main_item"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/longclick_setting"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_check_longclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_start_longclick"
+                    android:layout_alignRight="@+id/main_start_longclick"
+                    android:layout_alignTop="@+id/main_start_longclick"
+                    android:layout_marginRight="@dimen/size_25" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/main_start_long_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_alignLeft="@+id/main_start_click_rl"
+                android:layout_below="@+id/main_start_click_rl"
+                android:background="@color/textview_color" />
+            <!-- 一键新闻 -->
+
+            <TextView
+                android:id="@+id/main_news_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_start_long_line"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@color/bg"
+                android:drawableLeft="@drawable/news"
+                android:drawablePadding="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10"
+                android:text="@string/key_news"
+                android:textSize="@dimen/size_14sp" />
+
+            <RelativeLayout
+                android:id="@+id/main_news_click_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_news_title"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_news_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:background="@drawable/main_item"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/click_setting"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_news_click_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_news_click"
+                    android:layout_alignRight="@+id/main_news_click"
+                    android:layout_alignTop="@+id/main_news_click"
+                    android:layout_marginRight="@dimen/size_10" />
+
+                <TextView
+                    android:id="@+id/main_news_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:layout_below="@+id/main_news_click"
+                    android:layout_centerVertical="true"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_news_longclick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_news_line"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/locked"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/mysterious"
+                    android:textColor="@color/sm_bg"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_check_longclick_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_news_longclick"
+                    android:layout_alignRight="@+id/main_news_longclick"
+                    android:layout_alignTop="@+id/main_news_longclick"
+                    android:layout_marginRight="@dimen/size_10" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/main_news_long_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_alignLeft="@+id/main_start_click_rl"
+                android:layout_below="@+id/main_news_click_rl"
+                android:background="@color/textview_color" />
+
+            <!-- 一键游戏 -->
+
+            <TextView
+                android:id="@+id/main_games_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_news_long_line"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@color/bg"
+                android:drawableLeft="@drawable/shenmi1"
+                android:drawablePadding="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10"
+                android:text="@string/mysterious2"
+                android:textColor="@color/sm_bg"
+                android:textSize="@dimen/size_14sp" />
+
+            <RelativeLayout
+                android:id="@+id/main_games_click_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_games_title"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/games_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_games_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/games_line"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/locked"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/mysterious"
+                    android:textColor="@color/sm_bg"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_games_click_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_games_click"
+                    android:layout_alignRight="@+id/main_games_click"
+                    android:layout_alignTop="@+id/main_games_click"
+                    android:layout_marginRight="@dimen/size_10" />
+
+                <TextView
+                    android:id="@+id/main_games_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:layout_below="@+id/main_games_click"
+                    android:layout_centerVertical="true"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_games_longclick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_games_line"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/locked"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/mysterious"
+                    android:textColor="@color/sm_bg"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_games_longclick_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_games_longclick"
+                    android:layout_alignRight="@+id/main_games_longclick"
+                    android:layout_alignTop="@+id/main_games_longclick"
+                    android:layout_marginRight="@dimen/size_10" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/main_games_long_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_alignLeft="@+id/main_start_click_rl"
+                android:layout_below="@+id/main_games_click_rl"
+                android:background="@color/textview_color" />
+
+            <!-- 一键优惠 -->
+
+            <TextView
+                android:id="@+id/main_preferential_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_games_long_line"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="@color/bg"
+                android:drawableLeft="@drawable/shenmi1"
+                android:drawablePadding="@dimen/size_10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/size_10"
+                android:text="@string/mysterious2"
+                android:textColor="@color/sm_bg"
+                android:textSize="@dimen/size_14sp" />
+
+            <RelativeLayout
+                android:id="@+id/main_preferential_click_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_preferential_title"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/preferential_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_preferential_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/locked"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:layout_below="@+id/preferential_line"
+                    android:text="@string/mysterious"
+                    android:textColor="@color/sm_bg"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_preferential_click_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_preferential_click"
+                    android:layout_alignRight="@+id/main_preferential_click"
+                    android:layout_alignTop="@+id/main_preferential_click"
+                    android:layout_marginRight="@dimen/size_10" />
+
+                <TextView
+                    android:id="@+id/main_preferential_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/line_h"
+                    android:layout_below="@+id/main_preferential_click"
+                    android:layout_centerVertical="true"
+                    android:background="@color/textview_color" />
+
+                <TextView
+                    android:id="@+id/main_preferential_longclick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_preferential_line"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/locked"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:text="@string/mysterious"
+                    android:textColor="@color/sm_bg"
+                    android:textSize="@dimen/size_15sp" />
+
+                <ImageView
+                    android:id="@+id/main_preferential_longclick_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/main_preferential_longclick"
+                    android:layout_alignRight="@+id/main_preferential_longclick"
+                    android:layout_alignTop="@+id/main_preferential_longclick"
+                    android:layout_marginRight="@dimen/size_10" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/main_preferential_long_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_h"
+                android:layout_alignLeft="@+id/main_start_click_rl"
+                android:layout_below="@+id/main_start_click_rl"
+                android:background="@color/textview_color" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light">
+
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 全屏dialog样式 左右插入 -->
+    <style name="mydialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+   <style name="AlterDialogAnima" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/first_admin_in</item>
+        <item name="@android:windowExitAnimation">@anim/first_admin_out</item>
+    </style> 
+
+    <style name="Transparent">
+　　                  <item name="android:windowBackground">@color/transparent</item>
+　　                   <item name="android:windowIsTranslucent">true</item>
+　　                    <item name="android:windowAnimationStyle">@style/AlterDialogAnima</item>
+　　                    <item name="android:windowNoTitle">true</item>
+
+　　</style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="customerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/common_transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@color/common_transparent</item>
+    </style>
+
+</resources>

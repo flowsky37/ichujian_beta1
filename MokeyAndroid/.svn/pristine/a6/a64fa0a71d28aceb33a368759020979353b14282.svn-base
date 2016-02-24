@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <include layout="@layout/include_layout" />
+
+    <ImageView
+        android:id="@+id/about_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/launch_logo" />
+
+    <TextView
+        android:id="@+id/about_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="@string/version_code" />
+
+    <TextView
+        android:id="@+id/about_web_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_below="@+id/about_app_version"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@android:color/white"
+        android:drawablePadding="@dimen/size_10"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:text="@string/mokey_web"
+        android:textSize="@dimen/size_15sp" />
+
+    <TextView
+        android:id="@+id/about_web_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_alignLeft="@+id/about_web_tv"
+        android:layout_below="@+id/about_web_tv"
+        android:background="@color/textview_color" />
+
+    <!--
+    <TextView
+        android:id="@+id/about_phone_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/about_web_line"
+        android:background="@android:color/white"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/mokey_tel"
+        android:textSize="@dimen/size_15sp" />
+
+    <TextView
+        android:id="@+id/about_phone_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_alignLeft="@+id/about_phone_tv"
+        android:layout_below="@+id/about_phone_tv"
+        android:background="@color/textview_color" />
+    -->
+
+</RelativeLayout>

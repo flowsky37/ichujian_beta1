@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+     >
+
+    <include layout="@layout/include_layout" />
+
+    <TextView
+        android:id="@+id/setting_switch_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_below="@+id/top_rl"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/kaiqi_set"
+        android:drawablePadding="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:text="@string/seeting_open_control"
+        android:textSize="@dimen/size_15sp" />
+
+    <ImageView
+        android:id="@+id/setting_switch_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setting_switch_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/setting_switch_tv"
+        android:layout_marginRight="@dimen/size_10"
+        android:src="@drawable/open" />
+
+    <TextView
+        android:id="@+id/setting_update_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_below="@+id/setting_switch_tv"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/update_set"
+        android:drawablePadding="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:text="@string/seeting_check_version"
+        android:textSize="@dimen/size_15sp" />
+
+    <TextView
+        android:id="@+id/setting_show_update_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setting_update_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/setting_update_tv"
+        android:layout_marginRight="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:src="@drawable/open"
+        android:textColor="@color/textview_color" />
+
+    <TextView
+        android:id="@+id/setting_update_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_alignLeft="@+id/setting_update_tv"
+        android:layout_below="@+id/setting_update_tv"
+        android:background="@color/textview_color" />
+
+    <TextView
+        android:id="@+id/setting_feedback_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_below="@+id/setting_update_line"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/talking_set"
+        android:drawablePadding="@dimen/size_10"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:text="@string/opinion"
+        android:textSize="@dimen/size_15sp" />
+
+    <TextView
+        android:id="@+id/setting_feedback_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_alignLeft="@+id/setting_update_tv"
+        android:layout_below="@+id/setting_feedback_tv"
+        android:background="@color/textview_color" />
+
+    <TextView
+        android:id="@+id/setting_about_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_50"
+        android:layout_below="@+id/setting_feedback_line"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/about_set"
+        android:drawablePadding="@dimen/size_10"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:text="@string/seeting_about_mokey"
+        android:textSize="@dimen/size_15sp" />
+
+    <TextView
+        android:id="@+id/setting_about_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_h"
+        android:layout_alignLeft="@+id/setting_update_tv"
+        android:layout_below="@+id/setting_about_tv"
+        android:background="@color/textview_color" />
+
+</RelativeLayout>
